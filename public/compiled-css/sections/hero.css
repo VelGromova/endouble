@@ -1,0 +1,5 @@
+
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'size'.\A         on line 2 of scss/sections/hero.scss, in `size'\A         from line 2 of scss/sections/hero.scss\A \A 1: .hero {\A 2:   @include size(100%, 35rem);\A 3:   background: url('../../public/images/hero-image.jpg');\A 4: }"; }

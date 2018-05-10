@@ -1,0 +1,4 @@
+.hero {
+  @include size(100%, 35rem);
+  background: url('../../public/images/hero-image.jpg');
+}

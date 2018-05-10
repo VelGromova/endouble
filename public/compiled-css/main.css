@@ -1,0 +1,84 @@
+/**
+ * Size an Element
+ *
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
+ */
+/**
+ * Offset
+ *
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+html {
+  font-size: 10px; }
+
+body, ul, li, p {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style-type: none; }
+
+input {
+  border: 0;
+  outline: none; }
+
+.wrapper {
+  position: relative;
+  max-width: 1170px;
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+@media (max-width: 599px) {
+  .wrapper {
+    width: 90%; } }
+.header {
+  height: 4.5rem;
+  width: 100%;
+  background-color: #000; }
+  .header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .header .header-wrapper .logo {
+      color: #ffffff;
+      font: 3.9rem/1 "Yanone Kaffeesatz", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.97px; }
+    .header .header-wrapper .nav-list {
+      color: #fff; }
+      .header .header-wrapper .nav-list .nav-item {
+        display: inline-block;
+        font: 1.8rem/1 "Yanone Kaffeesatz", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer; }
+        .header .header-wrapper .nav-list .nav-item:not(:last-child) {
+          margin-right: 4rem; }
+        .header .header-wrapper .nav-list .nav-item.nav-item-isActive {
+          border-bottom: 2px solid #fff; }
+    .header .header-wrapper .search-input {
+      position: relative; }
+      .header .header-wrapper .search-input input {
+        height: 2.6rem;
+        width: 26rem;
+        margin-top: 4px;
+        padding-left: 15px;
+        text-transform: uppercase; }
+      .header .header-wrapper .search-input .icon-search {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+        width: 1.8rem; }
+
+.hero {
+  height: 35rem;
+  width: 100%;
+  background: url("../../public/images/hero-image.jpg"); }
+
+/*# sourceMappingURL=main.css.map */
