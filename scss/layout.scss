@@ -1,7 +1,7 @@
 .wrapper {
+  @include size(80%, 100%);
   position: relative;
   max-width: 1170px;
-  width: 70%;
   margin: 0 auto;
   box-sizing: border-box;
 }

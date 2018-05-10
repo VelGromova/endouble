@@ -13,21 +13,35 @@
 html {
   font-size: 10px; }
 
-body, ul, li, p {
+body, ul, li, p, h1, h2, h3 {
   padding: 0;
   margin: 0; }
 
 li {
   list-style-type: none; }
 
-input {
+input, textarea {
   border: 0;
   outline: none; }
 
+h1 {
+  font: 7rem/1 "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h2 {
+  font: 5rem/1 "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h3 {
+  font: 4rem/1 "Yanone Kaffeesatz", sans-serif; }
+
 .wrapper {
+  height: 100%;
+  width: 80%;
   position: relative;
   max-width: 1170px;
-  width: 70%;
   margin: 0 auto;
   box-sizing: border-box; }
 
@@ -51,7 +65,7 @@ input {
       text-transform: uppercase;
       letter-spacing: 0.97px; }
     .header .header-wrapper .nav-list {
-      color: #fff; }
+      color: #fef; }
       .header .header-wrapper .nav-list .nav-item {
         display: inline-block;
         font: 1.8rem/1 "Yanone Kaffeesatz", sans-serif;
@@ -61,7 +75,7 @@ input {
         .header .header-wrapper .nav-list .nav-item:not(:last-child) {
           margin-right: 4rem; }
         .header .header-wrapper .nav-list .nav-item.nav-item-isActive {
-          border-bottom: 2px solid #fff; }
+          border-bottom: 2px solid #fef; }
     .header .header-wrapper .search-input {
       position: relative; }
       .header .header-wrapper .search-input input {
@@ -79,6 +93,47 @@ input {
 .hero {
   height: 35rem;
   width: 100%;
+  position: relative;
   background: url("../../public/images/hero-image.jpg"); }
+  .hero .hero-titles {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    padding: 3.5rem 0;
+    transform: translate(-50%, -50%);
+    color: #fef;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center; }
+
+.apply-wrapper {
+  padding: 6rem 0;
+  background-color: #f7f7f7; }
+  .apply-wrapper .cta-title {
+    margin-bottom: 6rem; }
+  .apply-wrapper .form-note {
+    display: block;
+    font: 1.6rem/1 "Muli", sans-serif;
+    margin-bottom: 2rem; }
+  .apply-wrapper .personal-form {
+    position: relative;
+    margin-bottom: 4.8rem; }
+    .apply-wrapper .personal-form .inputs-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 100%; }
+      .apply-wrapper .personal-form .inputs-wrapper input {
+        height: 4.2rem;
+        width: 100%;
+        display: block;
+        flex: 0 0 47%;
+        font: 1.3rem/1 "Muli", sans-serif;
+        margin-bottom: 2rem;
+        padding-left: 1.3rem; }
+  .apply-wrapper .motivation-form {
+    width: 47%; }
+    .apply-wrapper .motivation-form textarea {
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

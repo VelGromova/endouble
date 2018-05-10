@@ -1,4 +1,16 @@
 .hero {
   @include size(100%, 35rem);
+  position: relative;
   background: url('../../public/images/hero-image.jpg');
+
+  .hero-titles {
+    @include offset(50%, 50%);
+    position: absolute;
+    width: 100%;
+    padding: 3.5rem 0;
+    transform: translate(-50%, -50%);
+    color: $white;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+  }
 }

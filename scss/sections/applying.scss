@@ -1,0 +1,43 @@
+.apply-wrapper {
+  padding: 6rem 0;
+  background-color: $grey;
+
+  .cta-title {
+    margin-bottom: 6rem;
+  }
+
+  .form-note {
+    display: block;
+    font: 1.6rem / 1 $muli;
+    margin-bottom: 2rem;
+  }
+
+  .personal-form {
+    position: relative;
+    margin-bottom: 4.8rem;
+
+    .inputs-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      input {
+        @include size(100%, 4.2rem);
+        display: block;
+        flex: 0 0 47%;
+        font: 1.3rem / 1 $muli;
+        margin-bottom: 2rem;
+        padding-left: 1.3rem;
+      }
+    }
+  }
+
+  .motivation-form {
+    width: 47%;
+
+    textarea {
+      width: 100%;
+    }
+  }
+}

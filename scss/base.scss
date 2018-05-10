@@ -4,7 +4,7 @@ html {
   font-size: 10px;
 }
 
-body, ul, li, p {
+body, ul, li, p, h1, h2, h3 {
   padding: 0;
   margin: 0;
 }
@@ -13,10 +13,14 @@ li {
   list-style-type: none;
 }
 
-input {
+input, textarea {
   border: 0;
   outline: none;
 }
+
+h1 { font: 7rem / 1 $yanone; font-weight: 700; text-transform: uppercase; }
+h2 { font: 5rem / 1 $yanone; font-weight: 700; text-transform: uppercase; }
+h3 { font: 4rem / 1 $yanone; }
 
 
 
