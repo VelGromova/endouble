@@ -8,7 +8,7 @@ body, ul, li, p, h1, h2, h3 {
 li {
   list-style-type: none; }
 
-input, textarea {
+input, textarea, button {
   border: 0;
   outline: none; }
 

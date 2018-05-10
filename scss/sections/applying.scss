@@ -12,6 +12,10 @@
     margin-bottom: 2rem;
   }
 
+  .label {
+    font: 1.3rem / 1 $muli;
+  }
+
   .personal-form {
     position: relative;
     margin-bottom: 4.8rem;
@@ -22,22 +26,87 @@
       justify-content: space-between;
       width: 100%;
 
-      input {
+      .input {
         @include size(100%, 4.2rem);
+        position: relative;
         display: block;
         flex: 0 0 47%;
         font: 1.3rem / 1 $muli;
-        margin-bottom: 2rem;
         padding-left: 1.3rem;
+        margin-bottom: 2rem;
+        color: $blueText;
       }
     }
   }
 
   .motivation-form {
-    width: 47%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-    textarea {
-      width: 100%;
+    .textarea-wrapper {
+      flex: 0 0 47%;
+
+      textarea {
+        width: 100%;
+        resize: none;
+        padding: 1.6rem 0 0 1.3rem;
+        font: 1.3rem / 1 $muli;
+        color: $blueText;
+      }
+    }
+
+    .attach-wrapper {
+      flex: 0 0 47%;
+
+      .block-wrapper {
+        height: 5rem;
+
+        .label {
+          display: inline-block;
+          margin-top: 1.5rem;
+        }
+
+        .upload-btn {
+          @include size(33%, 4rem);
+          position: relative;
+          float: right;
+          background-color: #005c9d;
+          color: $white;
+          text-transform: uppercase;
+          margin-left: 0.8rem;
+          padding-left: 2.5rem;
+
+          &:before {
+            position: absolute;
+          }
+
+          &.file-btn:before {
+            @include offset(18px, 12px);
+            content: url('../../public/images/pc-icon.png');
+          }
+
+          &.dropbox-btn:before {
+            @include offset(8px, 8px);
+            content: url('../../public/images/dropbox-icon.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .apply-wrapper {
+
+    .personal-form {
+
+      .inputs-wrapper {
+
+        .input {
+          flex: 0 0 100%;
+        }
+      }
     }
   }
 }

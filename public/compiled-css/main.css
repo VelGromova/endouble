@@ -20,7 +20,7 @@ body, ul, li, p, h1, h2, h3 {
 li {
   list-style-type: none; }
 
-input, textarea {
+input, textarea, button {
   border: 0;
   outline: none; }
 
@@ -47,7 +47,8 @@ h3 {
 
 @media (max-width: 599px) {
   .wrapper {
-    width: 90%; } }
+    width: 90%;
+    overflow: hidden; } }
 .header {
   height: 4.5rem;
   width: 100%;
@@ -115,6 +116,8 @@ h3 {
     display: block;
     font: 1.6rem/1 "Muli", sans-serif;
     margin-bottom: 2rem; }
+  .apply-wrapper .label {
+    font: 1.3rem/1 "Muli", sans-serif; }
   .apply-wrapper .personal-form {
     position: relative;
     margin-bottom: 4.8rem; }
@@ -123,17 +126,62 @@ h3 {
       flex-flow: row wrap;
       justify-content: space-between;
       width: 100%; }
-      .apply-wrapper .personal-form .inputs-wrapper input {
+      .apply-wrapper .personal-form .inputs-wrapper .input {
         height: 4.2rem;
         width: 100%;
+        position: relative;
         display: block;
         flex: 0 0 47%;
         font: 1.3rem/1 "Muli", sans-serif;
+        padding-left: 1.3rem;
         margin-bottom: 2rem;
-        padding-left: 1.3rem; }
+        color: #01385f; }
   .apply-wrapper .motivation-form {
-    width: 47%; }
-    .apply-wrapper .motivation-form textarea {
-      width: 100%; }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .apply-wrapper .motivation-form .textarea-wrapper {
+      flex: 0 0 47%; }
+      .apply-wrapper .motivation-form .textarea-wrapper textarea {
+        width: 100%;
+        resize: none;
+        padding: 1.6rem 0 0 1.3rem;
+        font: 1.3rem/1 "Muli", sans-serif;
+        color: #01385f; }
+    .apply-wrapper .motivation-form .attach-wrapper {
+      flex: 0 0 47%; }
+      .apply-wrapper .motivation-form .attach-wrapper .block-wrapper {
+        height: 5rem; }
+        .apply-wrapper .motivation-form .attach-wrapper .block-wrapper .label {
+          display: inline-block;
+          margin-top: 1.5rem; }
+        .apply-wrapper .motivation-form .attach-wrapper .block-wrapper .upload-btn {
+          height: 4rem;
+          width: 33%;
+          position: relative;
+          float: right;
+          background-color: #005c9d;
+          color: #fef;
+          text-transform: uppercase;
+          margin-left: 0.8rem;
+          padding-left: 2.5rem; }
+          .apply-wrapper .motivation-form .attach-wrapper .block-wrapper .upload-btn:before {
+            position: absolute; }
+          .apply-wrapper .motivation-form .attach-wrapper .block-wrapper .upload-btn.file-btn:before {
+            top: 12px;
+            left: 18px;
+            content: url("../../public/images/pc-icon.png"); }
+          .apply-wrapper .motivation-form .attach-wrapper .block-wrapper .upload-btn.dropbox-btn:before {
+            top: 8px;
+            left: 8px;
+            content: url("../../public/images/dropbox-icon.png"); }
+
+@media (max-width: 599px) {
+  .apply-wrapper .personal-form .inputs-wrapper .input {
+    flex: 0 0 100%; } }
+.info-block {
+  height: 40rem;
+  width: 100%;
+  background: url("../../public/images/info-bg.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,OAAO,EAAE,MAAM;EAEf,yBAAW;IACT,aAAa,EAAE,IAAI;EASnB,6CAAgB;IACd,OAAO,EAAE,IAAI;IACb,IAAI,EAAE,GAAG;IAET,mDAAM;MACJ,KAAK,EAAE,IAAI",
+"sources": ["../../../scss/sections/applying.scss"],
+"names": [],
+"file": "applying.css"
+}

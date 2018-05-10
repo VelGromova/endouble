@@ -1,0 +1,4 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'size'.\A         on line 2 of scss/sections/info.scss, in `size'\A         from line 2 of scss/sections/info.scss\A \A 1: .info-block {\A 2:   @include size(100%, 40rem);\A 3:   background: url('../../public/images/info-bg.jpg');\A 4: \A 5: \A 6: }"; }
