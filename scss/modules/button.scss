@@ -1,0 +1,48 @@
+%btn {
+  position: relative;
+  background-color: $blueButton;
+  color: $white;
+  text-transform: uppercase;
+  height: 4rem;
+}
+
+.upload-btn {
+  @extend %btn;
+  width: 33%;
+  float: right;
+  padding-left: 2.5rem;
+
+  &:before {
+    position: absolute;
+  }
+
+  &:not(:first-of-type) {
+    margin-left: 0.8rem;
+  }
+
+  &.file-btn:before {
+    @include offset(18px, 12px);
+    content: url('../../public/images/pc-icon.png');
+  }
+
+  &.dropbox-btn:before {
+    @include offset(8px, 8px);
+    content: url('../../public/images/dropbox-icon.png');
+  }
+}
+
+.ctaApply-btn {
+  @extend %btn;
+  width: 68%;
+}
+
+@media (max-width: 991px) {
+  .upload-btn {
+    width: 48%;
+    float: inherit;
+  }
+
+  .ctaApply-btn {
+    float: right;
+  }
+}

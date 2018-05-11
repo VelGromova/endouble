@@ -4,7 +4,7 @@ html {
   font-size: 10px;
 }
 
-body, ul, li, p, h1, h2, h3 {
+body, ul, li, p, h1, h2, h3, h6 {
   padding: 0;
   margin: 0;
 }
@@ -18,9 +18,20 @@ input, textarea, button {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1 { font: 7rem / 1 $yanone; font-weight: 700; text-transform: uppercase; }
 h2 { font: 5rem / 1 $yanone; font-weight: 700; text-transform: uppercase; }
-h3 { font: 4rem / 1 $yanone; }
+h3 { font: 4rem / 1 $yanone; text-transform: uppercase; }
+h6 { font: 1.5rem / 1 $yanone; }
+
+@media (max-width: 599px) {
+  h1 { font-size: 5rem }
+  h2 { font-size: 4rem }
+  h3 { font-size: 3rem }
+}
 
 
 

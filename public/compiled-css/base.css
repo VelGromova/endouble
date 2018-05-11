@@ -1,7 +1,7 @@
 html {
   font-size: 10px; }
 
-body, ul, li, p, h1, h2, h3 {
+body, ul, li, p, h1, h2, h3, h6 {
   padding: 0;
   margin: 0; }
 
@@ -11,6 +11,9 @@ li {
 input, textarea, button {
   border: 0;
   outline: none; }
+
+button {
+  cursor: pointer; }
 
 h1 {
   font: 7rem/1 "Yanone Kaffeesatz", sans-serif;
@@ -23,6 +26,20 @@ h2 {
   text-transform: uppercase; }
 
 h3 {
-  font: 4rem/1 "Yanone Kaffeesatz", sans-serif; }
+  font: 4rem/1 "Yanone Kaffeesatz", sans-serif;
+  text-transform: uppercase; }
+
+h6 {
+  font: 1.5rem/1 "Yanone Kaffeesatz", sans-serif; }
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 5rem; }
+
+  h2 {
+    font-size: 4rem; }
+
+  h3 {
+    font-size: 3rem; } }
 
 /*# sourceMappingURL=base.css.map */

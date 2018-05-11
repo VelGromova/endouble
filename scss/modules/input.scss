@@ -1,0 +1,28 @@
+%input {
+  position: relative;
+  height: 4.2rem;
+  font: 1.3rem / 1 $muli;
+  padding-left: 1.3rem;
+  color: $blueText;
+  border: 1px solid $borderGrey;
+}
+
+.input {
+  @extend %input;
+  width: 100%;
+  display: block;
+  flex: 0 0 47%;
+  margin-bottom: 2rem;
+
+  &.isError {
+    border: 1px solid $red;
+    color: $red;
+  }
+}
+
+@media (max-width: 599px) {
+  .input {
+    flex: 0 0 100%;
+    width: 95%;
+  }
+}

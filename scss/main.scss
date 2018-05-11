@@ -7,7 +7,8 @@
 @import 'layout';
 //
 // modules
-
+@import "modules/button.scss";
+@import "modules/input.scss";
 //
 //// sections
 @import 'sections/header';
