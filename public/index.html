@@ -40,12 +40,32 @@
                 <div class="personal-form">
                     <span class="form-note">Personal details *</span>
                     <div class="inputs-wrapper">
-                        <input class="input" type="text" placeholder="Name">
-                        <input class="input isValidated" type="text" placeholder="Last Name">
-                        <input class="input" type="text" placeholder="City">
-                        <input class="input" type="text" placeholder="Country">
-                        <input class="input" type="text" placeholder="Email">
-                        <input class="input isError" type="tel" placeholder="Telephone">
+                        <div class="input-wrapper">
+                            <input class="input" type="text" placeholder="Name" validator="string">
+                            <span class="check">&#10004;</span>
+                            <div class="error-message">Please, enter your real name</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input class="input" type="text" placeholder="Last Name" validator="string">
+                            <div class="error-message">Please, enter your real surname</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input class="input" type="text" placeholder="City" validator="string">
+                            <div class="error-message">Please, enter your real city</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input class="input" type="text" placeholder="Country" validator="string">
+                            <div class="error-message">Please, enter your real country</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input class="input" type="text" placeholder="Email" validator="email">
+                            <div class="error-message">Please, enter your real email</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input class="input" type="tel" placeholder="Telephone" validator="phone">
+                            <div class="error-message">Please, enter your real number</div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="motivation-form">

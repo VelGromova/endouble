@@ -115,11 +115,38 @@ h6 {
   .input.isError {
     border: 1px solid #c80000;
     color: #c80000; }
+  .input.isValid {
+    color: #01385f; }
 
 @media (max-width: 599px) {
   .input {
     flex: 0 0 100%;
     width: 95%; } }
+.inputs-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%; }
+  .inputs-wrapper .input-wrapper {
+    position: relative; }
+    .inputs-wrapper .input-wrapper .error-message {
+      display: none; }
+    .inputs-wrapper .input-wrapper.hasErrors .error-message {
+      display: block;
+      position: absolute;
+      bottom: 0.5rem;
+      font: 1rem/1 "Muli", sans-serif;
+      color: #c80000; }
+    .inputs-wrapper .input-wrapper .check {
+      display: none; }
+    .inputs-wrapper .input-wrapper .isValid + .check {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 0;
+      font-size: 1.5rem;
+      color: #01385f; }
+
 .header {
   height: 4.5rem;
   width: 100%;
@@ -207,11 +234,6 @@ h6 {
   .apply-wrapper .personal-form {
     position: relative;
     margin-bottom: 4.8rem; }
-    .apply-wrapper .personal-form .inputs-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      width: 100%; }
   .apply-wrapper .motivation-form {
     display: flex;
     flex-flow: row wrap;

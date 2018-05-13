@@ -3,9 +3,10 @@
   height: 4.2rem;
   font: 1.3rem / 1 $muli;
   padding-left: 1.3rem;
-  color: $blueText;
+  color: $blueValid;
   border: 1px solid $borderGrey;
 }
+
 
 .input {
   @extend %input;
@@ -18,11 +19,55 @@
     border: 1px solid $red;
     color: $red;
   }
+
+  &.isValid {
+    color: $blueValid;
+  }
 }
 
 @media (max-width: 599px) {
   .input {
     flex: 0 0 100%;
     width: 95%;
+  }
+}
+
+
+.inputs-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  .input-wrapper {
+    position: relative;
+
+    .error-message {
+      display: none;
+    }
+
+    &.hasErrors {
+
+      .error-message {
+        display: block;
+        position: absolute;
+        bottom: 0.5rem;
+        font: 1rem / 1 $muli;
+        color: $red;
+      }
+    }
+
+    .check {
+      display: none;
+    }
+
+    .isValid + .check {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 0;
+      font-size: 1.5rem;
+      color: $blueValid;
+    }
   }
 }

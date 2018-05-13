@@ -19,13 +19,6 @@
   .personal-form {
     position: relative;
     margin-bottom: 4.8rem;
-
-    .inputs-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      width: 100%;
-    }
   }
 
   .motivation-form {
@@ -41,7 +34,7 @@
         resize: none;
         padding: 1.6rem 0 0 1.3rem;
         font: 1.3rem / 1 $muli;
-        color: $blueText;
+        color: $blueValid;
       }
     }
 
