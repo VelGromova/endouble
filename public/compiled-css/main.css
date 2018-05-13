@@ -79,7 +79,7 @@ h6 {
   .upload-btn:before {
     position: absolute; }
   .upload-btn:not(:first-of-type) {
-    margin-left: 0.8rem; }
+    margin-right: 0.8rem; }
   .upload-btn.file-btn:before {
     top: 12px;
     left: 18px;
@@ -110,7 +110,6 @@ h6 {
 .input {
   width: 100%;
   display: block;
-  flex: 0 0 47%;
   margin-bottom: 2rem; }
   .input.isError {
     border: 1px solid #c80000;
@@ -125,10 +124,11 @@ h6 {
 .inputs-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%; }
+  justify-content: space-between; }
   .inputs-wrapper .input-wrapper {
-    position: relative; }
+    position: relative;
+    width: 100%;
+    flex: 0 0 47%; }
     .inputs-wrapper .input-wrapper .error-message {
       display: none; }
     .inputs-wrapper .input-wrapper.hasErrors .error-message {

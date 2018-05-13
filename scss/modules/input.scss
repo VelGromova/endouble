@@ -12,8 +12,8 @@
   @extend %input;
   width: 100%;
   display: block;
-  flex: 0 0 47%;
   margin-bottom: 2rem;
+
 
   &.isError {
     border: 1px solid $red;
@@ -37,10 +37,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 100%;
 
   .input-wrapper {
     position: relative;
+    width: 100%;
+    flex: 0 0 47%;
 
     .error-message {
       display: none;
