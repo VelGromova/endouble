@@ -18,7 +18,7 @@ for (let elementIndex = 0; elementIndex < inputElements.length; elementIndex++) 
 
       this.className = helpers.createInputClassNameByValidationResult(validationResult);
       wrapper.className = helpers.createWrapperClassNameByValidationResult(validationResult);
-      wrapper.childNodes[3].textContent = validationMessage
+      wrapper.children[2].textContent = validationMessage
     } catch (err) {}
   })
 }
@@ -28,9 +28,9 @@ document.getElementById('applyButton').addEventListener('click', function () {
   let validationFields = {};
   for (let elementIndex = 0; elementIndex < inputElements.length; elementIndex++) {
     let wrapper = document.getElementsByClassName('input-wrapper')[elementIndex];
-    wrapper.childNodes[1].dispatchEvent(event);
+    wrapper.children[0].dispatchEvent(event);
 
-    let value = wrapper.childNodes[1].value;
+    let value = wrapper.children[0].value;
     let validator = wrapper.childNodes[1].getAttribute('validator');
 
     validationFields[validator] = value
