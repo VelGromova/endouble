@@ -1,4 +1,0 @@
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'size'.\A         on line 2 of scss/layout.scss, in `size'\A         from line 2 of scss/layout.scss\A \A 1: .wrapper {\A 2:   @include size(80%, 100%);\A 3:   position: relative;\A 4:   max-width: 1170px;\A 5:   margin: 0 auto;\A 6:   box-sizing: border-box;\A 7: }"; }

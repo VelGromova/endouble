@@ -1,4 +1,0 @@
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'size'.\A         on line 2 of scss/sections/header.scss, in `size'\A         from line 2 of scss/sections/header.scss\A \A 1: .header {\A 2:   @include size(100%, 4.5rem);\A 3:   background-color: $black;\A 4: \A 5:   .header-wrapper {\A 6:     display: flex;\A 7:     justify-content: space-between;"; }

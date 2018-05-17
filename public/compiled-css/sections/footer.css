@@ -1,4 +1,0 @@
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 6 of scss/sections/footer.scss\A \A 1: .footer-wrapper {\A 2:   display: flex;\A 3:   justify-content: space-between;\A 4:   flex-flow: row wrap;\A 5:   margin: 3rem 0 6rem;\A 6:   border-top: 1px solid $grey;\A 7: \A 8:   .footer-block {\A 9:     padding-top: 2rem;\A 10: \A 11:     .footer-blockTitle {"; }

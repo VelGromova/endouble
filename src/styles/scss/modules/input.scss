@@ -1,0 +1,77 @@
+%input {
+  position: relative;
+  height: 4.2rem;
+  font: 1.3rem / 1 $muli;
+  padding: 0 1.3rem;
+  color: $blueValid;
+  border: 1px solid $borderGrey;
+}
+
+
+.input {
+  @extend %input;
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+  background: $pureWhite;
+  border-radius: 0;
+  box-sizing: border-box;
+
+
+  &.isError {
+    border: 1px solid $red;
+    color: $red;
+  }
+
+  &.isValid {
+    color: $blueValid;
+  }
+}
+
+@media (max-width: 599px) {
+  .input {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+
+.inputs-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    flex: 0 0 47%;
+
+    .error-message {
+      display: none;
+    }
+
+    &.hasErrors {
+
+      .error-message {
+        display: block;
+        position: absolute;
+        bottom: 0.5rem;
+        font: 1rem / 1 $muli;
+        color: $red;
+      }
+    }
+
+    .check {
+      display: none;
+    }
+
+    .isValid + .check {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-size: 1.5rem;
+      color: $blueValid;
+    }
+  }
+}
