@@ -46,9 +46,6 @@
     width: 100%;
     flex: 0 0 47%;
 
-    .error-message {
-      display: none;
-    }
 
     &.hasErrors {
 
@@ -75,3 +72,8 @@
     }
   }
 }
+
+.error-message {
+  display: none;
+}
+

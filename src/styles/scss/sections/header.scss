@@ -151,13 +151,15 @@
 
         #mobile-menu {
           position: absolute;
-          width: 30rem;
+          width: 28rem;
           padding: 5rem;
-          margin: -6rem 0 0 5.3rem;
+          margin: -6rem 0 0 8rem;
           background: $pureWhite;
+          box-sizing: border-box;
           transform-origin: 0 0;
           transform: none;
           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
 
           .nav-item {
             padding: 10px 0;
