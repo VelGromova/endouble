@@ -28,6 +28,10 @@
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
-    "webpack": "^2.2.0-rc.4"
+    "webpack": "^2.7.0"
+  },
+  "dependencies": {
+    "tingle.js": "^0.13.2",
+    "validate.js": "^0.12.0"
   }
 }
